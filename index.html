@@ -1,0 +1,50 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/style_v2.css">
+<title>Video Synchronizing &amp; 360</title> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(function () {
+	$( "#instruction" ).click(function() {
+	   $(this).remove();
+	});
+});
+</script>
+</head>
+
+<body>	
+<div id="instruction"><img src="img/instructions.jpg" /></div>
+<!--Main Canvas-->
+<canvas id="windowCanvas" style="width: 100% !important" width="1000" height="1080"></canvas>
+
+<!--360 canvas-->
+<div id="canvas360div">
+	<canvas id="canvas360" style="border:1px solid #000000"></canvas>
+</div>
+
+<video id="video1" height="544" width="1440" loop="">
+	<source src="videos/3.webm" type="video/webm">
+</video>
+
+<video id="video2" height="320" width="1152" loop="">
+	<source src="videos/2.webm" type="video/webm">
+</video>
+
+<video id="video3" height="242" width="1370" loop="">
+	<source src="videos/1.webm" type="video/webm">
+</video>
+
+<video id="video4" loop="">
+    <source src="videos/5.webm" type="video/webm">
+</video>
+
+<script type="text/javascript" src="js/three.min.js"></script>
+<script type="text/javascript" src="js/pieces.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/events.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+
+</body></html>
